@@ -1,0 +1,315 @@
+.dashboard-container {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 250px;
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.sidebar.collapsed {
+  display: none;
+}
+
+.main-content {
+  overflow-y: auto;
+  background-color: #0a0e11;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-menu {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.content {
+  flex-grow: 1;
+  overflow-y: auto;
+  height: calc(100vh - 56px); /* adjust if topbar height changes */
+}
+.sidebar {
+  width: 250px;
+  transition: all 0.3s ease;
+  height: 100vh;
+}
+
+.sidebar.collapsed {
+  width: 60px;
+}
+
+.sidebar .nav-link {
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.sidebar .nav-link:hover {
+  color: #0d6efd;
+}
+
+.sidebar .nav-link.text-success {
+  font-weight: 600;
+}
+
+.sidebar .nav-link.text-danger {
+  color: #dc3545;
+}
+
+.sidebar .nav-link.text-danger:hover {
+  color: #ff4d4f;
+}
+
+
+/* active page */
+/* style.css */
+
+.sidebar .nav-link.active-link {
+  color: white !important; /* Green (Bootstrap success) */
+  font-weight: bold;
+  background-color: #353836;
+  border-left: 4px solid #28a745;
+}
+
+.sidebar .nav-link:hover{
+  background-color: #353836;
+}
+.sidebar .submenu-link.active-sub {
+  color: #ffc107 !important; /* Bootstrap warning color */
+  font-weight: bold;
+  background-color: rgba(255, 193, 7, 0.1);
+  border-left: 4px solid #ffc107;
+}
+/*============================= claender ===================*/
+
+/* calendar-theme.css */
+
+.dark-calendar {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.dark-calendar abbr {
+  color: white !important;
+}
+
+.dark-calendar button {
+  background: none;
+  color: white !important;
+  border: none;
+}
+
+.dark-calendar button:enabled:hover {
+  background-color: #007ACC;
+  color: #fff !important;
+  border-radius: 6px;
+}
+
+.dark-calendar .react-calendar__tile--now {
+  background: #333;
+  border-radius: 6px;
+}
+
+.dark-calendar .react-calendar__tile--active {
+  background: #007ACC;
+  border-radius: 6px;
+}
+
+.dark-calendar .react-calendar__navigation {
+  margin-bottom: 10px;
+}
+
+.dark-calendar .react-calendar__navigation button {
+  color: white !important;
+}
+
+
+/* sidebar :xr-overlay */
+
+/* style.css */
+/* Base styles */
+.dashboard-container {
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.sidebar {
+  width: 250px;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  min-height: 100vh;
+  background-color: #1e1e1e; /* dark background for sidebar */
+}
+
+.sidebar.collapsed {
+  width: 60px;
+}
+
+/* Main content */
+.main-content {
+  transition: margin-left 0.3s ease;
+}
+
+/* ⬇️ Small screens: Sidebar floats over content */
+@media (max-width: 767.98px) {
+  .dashboard-container {
+    flex-direction: column;
+    position: relative;
+  }
+
+  .sidebar {
+    width: 80%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1100;
+    border-right: 1px solid #444;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .sidebar.collapsed {
+    display: none;
+  }
+
+  .main-content {
+    width: 100%;
+  }
+
+  /* Optional overlay when sidebar is open */
+  .sidebar-backdrop {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+  }
+}
+
+
+/* change password bg*/
+
+.change_passbg{
+  background-color: rgb(34, 33, 33);
+}
+
+/* char page */
+.chat-container {
+  display: flex;
+  height: 100vh;
+  background-color: #212121;
+  color: white;
+}
+
+.sidebar {
+  width: 250px;
+  background: #2c2c2c;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.sidebar .myname {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #90caf9;
+}
+
+.user {
+  padding: 10px;
+  margin: 5px 0;
+  background: #333;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.user.active {
+  background: #007acc;
+  color: white;
+}
+
+.chat-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background: #1e1e1e;
+}
+
+.chat-header {
+  padding: 10px;
+  border-bottom: 1px solid #444;
+}
+
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+  background: #121212;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 70%;
+}
+
+.sent {
+  background-color: #007acc;
+  align-self: flex-end;
+}
+
+.received {
+  background-color: #444;
+  align-self: flex-start;
+}
+
+.chat-input {
+  display: flex;
+  gap: 10px;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+}
+
+.chat-input button {
+  padding: 10px 20px;
+  background: #007acc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .chat-container {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    order: 2;
+  }
+  .chat-box {
+    order: 1;
+  }
+}
+

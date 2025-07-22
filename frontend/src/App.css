@@ -1,0 +1,397 @@
+
+.home-container {
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.home-header {
+  padding: 8px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-logo {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+.home_page_a{
+  text-decoration: none;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: capitalize;
+  /* background-color: #05C46B; */
+  color:#2ECC71;
+  padding: 10px 20px;
+  margin-left: 10px;
+  
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.home-button {
+  /* background-color: #05C46B; */
+  
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: capitalize;
+
+  text-decoration: none;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  margin-left: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.home-button:hover {
+  color: #05C46B;
+}
+
+.register-btn:hover {
+  color: #05C46B;
+}
+
+.welcome-text {
+  font-size: 28px;
+  color: black;
+  /* font-family: 'Courier New', Courier, monospac; */
+}
+.regi_link{
+  color: #05C46B;
+}
+.bi-facebook,.bi-google,.bi-twitter{
+
+  &:hover{
+
+    color: #05C46B;
+  }
+}
+
+.register_right,.login_left{
+  background-color: #131d31;
+}
+
+/******************* dashboard app *******************/
+.main_bg{
+  background-color: #171919;
+}
+/* Your main stylesheet or component CSS */
+.calendar {
+  background-color: #1D2021 !important;  /* Dark background */
+  color: #ffffff !important;            /* Light text */
+  border: none !important;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* Optional: Override individual tile (day) styling */
+.calendar .react-calendar__tile {
+  background-color: #1D2021 !important;
+  color: #fff !important;
+  border-radius: 5px;
+}
+
+/* On hover and active date */
+.calendar .react-calendar__tile--active,
+.calendar .react-calendar__tile:enabled:hover {
+  background-color: #6c5ce7 !important;
+  color: #fff !important;
+}
+
+/* Sidebar collapsed to top */
+@media (max-width: 768px) {
+  .dashboard-sidebar {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    flex-direction: row;
+    padding: 10px;
+  }
+
+}
+@media (max-width: 768px) {
+  .dashboard-sidebar.collapsed {
+    display: none !important;
+  }
+}
+.topbar{
+  background-color: #202b26;
+}
+/* aside bar=================================================================== */
+/* For Chrome, Edge, Safari */
+.sidebar-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sidebar-scroll::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 10px;
+  border: 1px solid #333;
+}
+
+.sidebar-scroll::-webkit-scrollbar-thumb:hover {
+  background-color: #888;
+}
+
+.sidebar-menu li {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.sidebar-menu li:hover {
+  background: #3d4152;
+}
+
+.sidebar-menu li.active {
+  /* margin-top: 10px; */
+  /* background: #05C46B; */
+  color: #05C46B;
+  /* border-radius: 5px; */
+}
+
+.sub-menu li {
+  padding: 8px 15px;
+  font-size: 14px;
+}
+
+/*================================= collpasa ====================================*/
+.collapsed-submenu {
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+.collapsed-submenu li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 0;
+}
+
+.collapsed-submenu li i {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.collapsed-submenu li span {
+  display: none; /* hide text */
+}
+
+/*==================================== sidebar css=========================== */
+.dashboard-body {
+  display: flex;
+  flex: 1;
+    min-height: 100vh;
+
+}
+.dashboard-main {
+  flex: 1;
+  padding: 30px;
+}
+
+/******************* sidebar collapsa/ *************************/
+.dashboard-sidebar {
+  width: 250px;
+  transition: width 0.3s ease;
+}
+
+.dashboard-sidebar.collapsed {
+  width: 70px;
+}
+
+.dashboard-sidebar.collapsed .sidebar-menu ul,
+.dashboard-sidebar.collapsed h6,
+.dashboard-sidebar.collapsed .sub-menu
+ {
+  display: none !important;
+}
+
+.sidebar-item i {
+  font-size: 1.2rem;
+}
+
+/* Optional: submenu spacing when collapsed */
+.collapsed-sidebar ul li {
+  padding-left: 18px;
+}
+/*================================ aside bar amall device  ================================*/
+
+
+/*========================================== attendance ===========================================*/
+
+.attendance-card {
+  box-shadow: 2px 3px 10px rgb(66, 60, 60);
+
+}
+
+.attendance-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.15);
+}
+
+/* change password */
+
+.change_passbg{
+  background-color: rgb(34, 33, 33);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer_fam{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+}
+.footer-link {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #05C46B; /* Bootstrap info color */
+}
+
+.footer-icon:hover {
+  color: #05C46B !important;
+  transition: 0.3s ease;
+}
+
+/************************ report card student **********************/
+.simple-report-card {
+  width: 80%;
+  margin: 30px auto;
+  padding: 20px;
+  background: #fdfdfd;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.simple-report-card h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+.logout_i{
+  margin-right: 10px;
+}
+
+.student-info p {
+  margin: 20px 0;
+  font-size: 16px;
+  color: #444;
+}
+
+.result-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.result-table th,
+.result-table td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.result-table th {
+  background-color: #3C3C3C;
+  color: #fff;
+}
+
+.download-btn {
+  background-color: #3c3c3c;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.download-btn:hover {
+  background-color: #7a7a7a;
+}
+
+
+/************************ add .subject-form ******************/
+
+.subject-form {
+  /* text-align: center; */
+  margin:2px auto ;
+  max-width: 50%;
+  padding: 10px 50px;
+}
+
+.form-title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: black;
+}
+
+
+.form-group label {
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-group input {
+  padding: 8px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  font-size: 15px;
+  outline: none;
+  transition: border 0.2s ease;
+}
+
+.form-group input:focus {
+  border-color: #3C3C3C;
+}
+
+.submit-btn {
+  margin-top: 25px;
+  width: 100%;
+  background-color:#3c3c3c ;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #3c3c3c;
+}
