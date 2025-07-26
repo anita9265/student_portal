@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import sliderImage from '../image/slider2.webp';
 
+
 function Login() {
   const navigate = useNavigate();
   const [email, setemail] = useState('');
@@ -32,13 +33,13 @@ function Login() {
 
 
   <div className="container-fluid min-vh-100 d-flex align-items-center justify-content-center login_bg" style={{backgroundColor:"#101828"}}>
-      <div className="row w-100 login_shadow" style={{ maxWidth: '1000px' }}>
+      <div className="row w-100 login_shadow" style={{ maxWidth: '1000px' ,boxShadow:'2px 0px 9px rgba(253, 248, 248, 0.9)'}}>
         
         {/* Left Panel - Login Form */}
         <div className="col-md-6 col-12 p-5 login_left">
           <div className="d-flex justify-content-between mb-3">
             <Link to="/" className="text-white">&larr;</Link>
-            <Link to="/register" className="regi_link fw-bold">Register</Link>
+            <Link to="/register" className="text-success text-underline-none fw-bold">Register</Link>
           </div>
 
           <h2 className="fw-bold text-success text-center pb-4 fs-2">Login</h2>

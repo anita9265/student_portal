@@ -88,8 +88,8 @@ function ChangePassword() {
     // </div>
 
 
-    <div className="d-flex justify-content-center align-items-center vh-100  change_passbg">
-  <div className="login-container bg-dark p-5  shadow-lg " style={{ maxWidth: "420px", width: "100%" }}>
+    <div className="d-flex justify-content-center align-items-center vh-100  change_passbg" style={{backgroundColor:'#101828'}}>
+  <div className="login-container p-5 " style={{ maxWidth: "420px", width: "100%" ,boxShadow:'2px 0px 9px rgba(253, 248, 248, 0.9)'}}>
     <form className="login-form" onSubmit={handleSubmit}>
       <h2 className="login-title text-success text-center mb-4 fw-bold"> Change Password</h2>
 

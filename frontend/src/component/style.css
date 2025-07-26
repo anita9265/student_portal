@@ -3,6 +3,7 @@
   overflow: hidden;
 }
 
+
 .sidebar {
   width: 250px;
   transition: all 0.3s;
@@ -87,51 +88,6 @@
 /*============================= claender ===================*/
 
 /* calendar-theme.css */
-
-.dark-calendar {
-  background-color: #1e1e1e;
-  color: #ffffff;
-  border: none;
-  border-radius: 8px;
-  padding: 10px;
-}
-
-.dark-calendar abbr {
-  color: white !important;
-}
-
-.dark-calendar button {
-  background: none;
-  color: white !important;
-  border: none;
-}
-
-.dark-calendar button:enabled:hover {
-  background-color: #007ACC;
-  color: #fff !important;
-  border-radius: 6px;
-}
-
-.dark-calendar .react-calendar__tile--now {
-  background: #333;
-  border-radius: 6px;
-}
-
-.dark-calendar .react-calendar__tile--active {
-  background: #007ACC;
-  border-radius: 6px;
-}
-
-.dark-calendar .react-calendar__navigation {
-  margin-bottom: 10px;
-}
-
-.dark-calendar .react-calendar__navigation button {
-  color: white !important;
-}
-
-
-/* sidebar :xr-overlay */
 
 /* style.css */
 /* Base styles */

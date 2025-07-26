@@ -91,9 +91,8 @@ setDateOfBirth("");
    </div>  */}
       <div className="container-fluid min-vh-100 d-flex align-items-center justify-content-center" style={{backgroundColor:"#101828"}}>
         <div
-          className="row shadow-lg overflow-hidden w-100"
-          style={{ maxWidth: "1000px" }}
-        >
+          className="row  overflow-hidden w-100"
+          style={{ maxWidth: "1000px" ,boxShadow:'2px 0px 9px rgba(253, 248, 248, 0.9)'}}>
           {/* Left - Image and Text */}
           <div
             className="col-md-6 d-none d-md-flex flex-column justify-content-center text-white p-4"

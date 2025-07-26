@@ -3,14 +3,12 @@
   color: white;
   font-family: Arial, sans-serif;
 }
-
 .home-header {
   padding: 8px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .home-logo {
   margin: 0;
   font-size: 24px;
@@ -24,7 +22,6 @@
   color:#2ECC71;
   padding: 10px 20px;
   margin-left: 10px;
-  
   border-radius: 6px;
   cursor: pointer;
 }
@@ -71,6 +68,9 @@
 
 .register_right,.login_left{
   background-color: #131d31;
+}
+.login_shadow{
+  box-shadow: 2px 3px 12px blanchedalmond;
 }
 
 /******************* dashboard app *******************/
@@ -239,7 +239,7 @@
 /* change password */
 
 .change_passbg{
-  background-color: rgb(34, 33, 33);
+  background-color: #101828;
 }
 
 

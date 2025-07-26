@@ -8,15 +8,16 @@ function Calander() {
 
   return (
     <div className="container mt-4">
-      <h3 className="text-success mb-4">
-        <i className="bi bi-calendar3 me-2"></i>Academic Calendar
+      <h3 className="text-white
+       mb-4">
+        <i className="bi bi-calendar3 me-2 text-white"></i>Academic Calendar
       </h3>
 
-      <div className="bg-dark text-white p-4 rounded shadow w-100" style={{ maxWidth: "400px" }}>
+      <div className="bg-dark  p-4 rounded shadow w-100" style={{ maxWidth: "400px" }}>
         <Calendar
           onChange={setDate}
           value={date}
-          className="dark-calendar"
+        
         />
 
         <div className="mt-4">
