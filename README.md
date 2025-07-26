@@ -22,5 +22,5 @@ Here is a screenshot of the attendance in action:
 ## student change password Preview
 
 Here is a screenshot of the change password in action:
-![](https://raw.githubusercontent.com/anita9265/student_portal/7ef01fa9fa1d3da2f446af119cdc1e3a87bac8ae/student_changepass.png)
+![](https://raw.githubusercontent.com/anita9265/student_portal/91097167b091c3fb7cf8d00cde30ee69a059e83c/changepassword.png)
 
